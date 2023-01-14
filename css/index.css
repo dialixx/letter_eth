@@ -1,0 +1,29 @@
+#body {
+	background: #aaaaaa;
+	font-family: "Courier New", "Times New Roman";
+	font-size: 100%
+}
+
+#container {
+	background: #888888;
+	width: 45%;
+	height: 95%;
+	padding-left: 1%;
+	padding-right: 1%;
+}
+
+#pword {
+	display: none;
+}
+
+#list {
+	display: none;
+	background: #999999;
+	height: 26.5%;
+	width: 40%;
+	overflow: auto;
+}
+
+.pheader {
+	font-weight: bold;
+}

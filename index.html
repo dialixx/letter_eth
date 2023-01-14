@@ -1,0 +1,49 @@
+<html>
+	<head>
+		<title>Unnamed Words Game</title>
+	
+		<meta charset="UTF-8">
+		<meta name="description" content="Words">
+		<meta name="keywords" content="Words Game, Letter Game, Language, Words, Game">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<link rel="stylesheet" type="text/css" href="css/index.css">
+	</head>
+	
+	<body id="body">
+		
+		<div id="container">
+		
+			<p class="pheader">brought to you by the letter "ETH"</p>
+			
+			<p>This is a web tool intended to help with playing a word game. Me and my friend made it up on the spot one day when we were bored, we only really said there were rules when we felt like there ought to be restrictions. The rules we made go like this:<br><br>
+			
+			Choose a letter. Your objective is to list as many words that begin with that letter as possible. You may not...<br>
+			*Say a word beginning with a different letter than that chosen<br>
+			*Repeat a word already used<br>
+			*Use multiple languages<br>
+			*Use proper nouns (names, locations, etc.)<br>
+			*Use numeric terms that are of infinite supply (forty, forty-one, forty-two, etc...)<br><br>
+			
+			Have fun, make up your own rules if you like.<br><br>
+			
+			Use the tool below to help if you like. Keep in mind that changing the letter or refreshing will clear the list of words.</p>
+			
+			<p id="pletter">
+			<input type="text" id="letter" placeholder="ETH"> <button id="letterbutton" onclick="pushletter()">Confirm</button> 
+			<span id="sletter">Insert a letter to begin.</span>
+			</p>
+			
+			<p id="pword">
+			<input type="text" id="word" placeholder="Luthier"> <button id="wordbutton" onclick="pushword()">Confirm</button> 
+			<span id="sword">Use this to add a word to the list.</span>
+			</p>
+			
+			<p id="list"></p>
+		
+		</div>
+		
+	</body>
+	
+	<script src="js/index.js"></script>
+</html>
