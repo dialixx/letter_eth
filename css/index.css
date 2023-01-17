@@ -10,6 +10,10 @@
 	height: 95%;
 	padding-left: 1%;
 	padding-right: 1%;
+	overflow: auto;
+	float: left;
+	scrollbar-width: thin;
+	scrollbar-color: #777777 #ffffff;
 }
 
 #pword {
@@ -19,11 +23,125 @@
 #list {
 	display: none;
 	background: #999999;
-	height: 26.5%;
-	width: 40%;
+	height: 32%;
+	width: 45%;
 	overflow: auto;
+	scrollbar-width: thin;
+	scrollbar-color: #777777 #ffffff;
+}
+
+#eggcontainer {
+	float: right;
+	overflow: auto;
+	scrollbar-width: thin;
+	scrollbar-color: #777777 #ffffff;
+	width: 45%;
+	height: 95%
+}
+
+#invisible {
+	color: #aaaaaa;
+	background-color: #aaaaaa;
+}
+
+.egg {
+	float: right;
+	display: none;
+	background: #888888;
+	width: 90%;
+	height: auto;
+	padding-left: 1%;
+	padding-right: 1%;
+	padding-bottom: 1%;
+	margin-bottom: 2%;
 }
 
 .pheader {
 	font-weight: bold;
+}
+
+@keyframes rb1 {
+	0%   {color: #ff0000}
+	16%  {color: #ffff00}
+	33%  {color: #00ff00}
+	49%  {color: #00ffff}
+	66%  {color: #0000ff}
+	82%  {color: #ff00ff}
+	100% {color: #ff0000}
+}
+@keyframes rb2 {
+	0%   {color: #ffff00}
+	16%  {color: #00ff00}
+	33%  {color: #00ffff}
+	49%  {color: #0000ff}
+	66%  {color: #ff00ff}
+	82%  {color: #ff0000}
+	100% {color: #ffff00}
+}
+@keyframes rb3 {
+	0%   {color: #00ff00}
+	16%  {color: #00ffff}
+	33%  {color: #0000ff}
+	49%  {color: #ff00ff}
+	66%  {color: #ff0000}
+	82%  {color: #ffff00}
+	100% {color: #00ff00}
+}
+@keyframes rb4 {
+	0%   {color: #00ffff}
+	16%  {color: #0000ff}
+	33%  {color: #ff00ff}
+	49%  {color: #ff0000}
+	66%  {color: #ffff00}
+	82%  {color: #00ff00}
+	100% {color: #00ffff}
+}
+@keyframes rb5 {
+	0%   {color: #0000ff}
+	16%  {color: #ff00ff}
+	33%  {color: #ff0000}
+	49%  {color: #ffff00}
+	66%  {color: #00ff00}
+	82%  {color: #00ffff}
+	100% {color: #0000ff}
+}
+@keyframes rb6 {
+	0%   {color: #ff00ff}
+	16%  {color: #ff0000}
+	33%  {color: #ffff00}
+	49%  {color: #00ff00}
+	66%  {color: #00ffff}
+	82%  {color: #0000ff}
+	100% {color: #ff00ff}
+}
+
+#rb1 {
+	animation-name: rb1;
+	animation-duration: 750ms;
+	animation-iteration-count: infinite;
+}
+#rb2 {
+	animation-name: rb2;
+	animation-duration: 750ms;
+	animation-iteration-count: infinite;
+}
+#rb3 {
+	animation-name: rb3;
+	animation-duration: 750ms;
+	animation-iteration-count: infinite;
+}
+#rb4 {
+	animation-name: rb4;
+	animation-duration: 750ms;
+	animation-iteration-count: infinite;
+}
+#rb5 {
+	animation-name: rb5;
+	animation-duration: 750ms;
+	animation-iteration-count: infinite;
+}
+#rb6 {
+	animation-name: rb6;
+	animation-duration: 750ms;
+	animation-iteration-count: infinite;
 }

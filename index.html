@@ -16,26 +16,26 @@
 		
 			<p class="pheader">brought to you by the letter "ETH"</p>
 			
-			<p>This is a web tool intended to help with playing a word game. Me and my friend made it up on the spot one day when we were bored, we only really said there were rules when we felt like there ought to be restrictions. The rules we made go like this:<br><br>
+			<p>This is a tool intended to help with playing a word game. The rules go like this:<br><br>
 			
 			Choose a letter. Your objective is to list as many words that begin with that letter as possible. You may not...<br>
 			*Say a word beginning with a different letter than that chosen<br>
 			*Repeat a word already used<br>
 			*Use multiple languages<br>
 			*Use proper nouns (names, locations, etc.)<br>
-			*Use numeric terms that are of infinite supply (forty, forty-one, forty-two, etc...)<br><br>
+			*Use numbers (forty, forty-one, forty-two, etc...)<br><br>
 			
 			Have fun, make up your own rules if you like.<br><br>
 			
 			Use the tool below to help if you like. Keep in mind that changing the letter or refreshing will clear the list of words.</p>
 			
 			<p id="pletter">
-			<input type="text" id="letter" placeholder="ETH"> <button id="letterbutton" onclick="pushletter()">Confirm</button> 
+			<input type="text" id="letter" placeholder="A-Z"> <button id="letterbutton" onclick="pushletter()">Confirm</button> 
 			<span id="sletter">Insert a letter to begin.</span>
 			</p>
 			
 			<p id="pword">
-			<input type="text" id="word" placeholder="Luthier"> <button id="wordbutton" onclick="pushword()">Confirm</button> 
+			<input type="text" id="word" placeholder="Word?"> <button id="wordbutton" onclick="pushword()">Confirm</button> 
 			<span id="sword">Use this to add a word to the list.</span>
 			</p>
 			
@@ -43,7 +43,86 @@
 		
 		</div>
 		
+		<div id="eggcontainer">
+		
+			<div id="eth" class="egg">
+			
+				<p class="pheader">letter 27</p>
+				
+				<p>While playing this game, the person I was playing it with played "Luthier," as we were on L. I can't remember if he spelled it to me and I repeated, or if I guessed what the word was based on how he pronounced it, but I spelled it as follows:<br><br>
+				
+				L U ETH I E R<br><br>
+				
+				...as if T and H put together was one letter. I didn't even realize the mistake I made while saying it, until he told me. I haven't laughed that hard in awhile.</p>
+				
+				<button onclick="hideid('eth')">Hide</button>
+			
+			</div>
+			
+			<div id="luthier" class="egg">
+				
+				<p class="pheader">rules?</p>
+				
+				<p>Me and my friend made the rules for this game up after we began playing. We said no proper nouns because you can just make those up on the spot. Numbers are in infinite supply, so that's cheating, of course. We said only one language, though there's not much of a reason for this other than making it feel more consistent. We also think short, simple words break the spirit of the game, like using "all" or "apple" for A.<br><br>
+				
+				Maybe you disagree. I wonder what your custom rules are, if you have any.</p>
+				
+				<button onclick="hideid('luthier')">Hide</button>
+				
+			</div>
+			
+			<div id="egg" class="egg">
+			
+				<p class="pheader">egg...</p>
+				
+				<p>How do you like your eggs? For me, it depends on my mood, but I usually do scrambled because it's easy, and I tend to be lazy when cooking for myself.<br><br>
+				
+				Next time you make scrambled eggs, try putting some milk into the eggs before you turn the heat up- it makes them lighter, and makes the flavor better, in my opinion. I also sometimes put salami in with mine, and always use salt and pepper. Sometimes I add creole seasoning too, if it's around.
+				</p>
+				
+				<button onclick="hideid('egg')">Hide</button>
+				
+			</div>
+			
+			<div id="journalfry" class="egg">
+			
+				<p class="pheader">the journalfather acknowledges your presence</p>
+				
+				<img src="media/splodey.gif"><br><br>
+				
+				<button onclick="hideid('journalfry')">Hide</button>
+				
+			</div>
+			
+			<div id="sidewaysdog" class="egg">
+			
+				<p class="pheader">brought-worst</p>
+				
+				<p>Now, let me propose to you an even more outrageous business venture...<br><br>
+				
+				<span id="rb1">V</span><span id="rb2">e</span><span id="rb3">r</span><span id="rb4">t</span><span id="rb5">i</span><span id="rb6">c</span><span id="rb1">a</span><span id="rb2">l </span><span id="rb3">D</span><span id="rb4">o</span><span id="rb5">g</span><span id="rb6">!</span><br><br>
+				
+				Yes, you guessed it! A dog aligned with the Y axis! Yes, it's a total waste of your time and money. You love it though, so you'll buy it anyway.
+				</p>
+				
+				<button onclick="hideid('sidewaysdog')">Hide</button>
+				
+			</div>
+			
+			<div id="invisible" class="egg">
+			
+				<p class="pheader">hey, what are you doing here?</p>
+				
+				<p>I'm not visible for a reason, why are you interrupting my private time? Get out of here!</p>
+				
+				<button onclick="hideid('invisible')">Hide</button>
+				
+			</div>
+			
+		</div>
+		
 	</body>
 	
-	<script src="js/index.js"></script>
+	<script type="text/javascript" src="js/words.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
 </html>
