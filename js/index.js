@@ -5,6 +5,11 @@ var letterincrement = 0;
 
 //the data for dictionary is in words.js. screw json
 
+//check tempword for any substrings contained within the array numbers
+
+function numbertest() {
+	
+}
 /*
 -check if there is input
 -check if input is a letter
@@ -33,6 +38,8 @@ function pushletter() {
 	} else if(TLup == "ETH") {
 		document.getElementById("sletter").innerHTML = "The secret letter...";
 		document.getElementById("eth").style.display = "block";
+		
+		letter = "th";
 	} else if(TLup.length > 1) {
 		document.getElementById("sletter").innerHTML = "Input is longer than one letter.";
 	} else if(TLup == letter) {
@@ -112,6 +119,56 @@ function pushword() {
 			document.getElementById("list").style.display = "block";
 			document.getElementById("list").innerHTML += "<br>journalfry";
 		}
+	} else if(tempword == "dingus") {
+		document.getElementById("sword").innerHTML = "Grumbus.";
+		document.getElementById("dingus").style.display = "block";
+		
+		if(firstletter == letter && !(words.includes("dingus"))) {
+			words.push("dingus");
+			
+			document.getElementById("list").style.display = "block";
+			document.getElementById("list").innerHTML += "<br>dingus";
+		}
+	} else if(tempword == "wawa") {
+		document.getElementById("sword").innerHTML = "wawa......";
+		document.getElementById("wawa").style.display = "block";
+		
+		if(firstletter == letter && !(words.includes("wawa"))) {
+			words.push("wawa");
+			
+			document.getElementById("list").style.display = "block";
+			document.getElementById("list").innerHTML += "<br>wawa";
+		}
+	} else if(tempword == "monolith") {
+		document.getElementById("sword").innerHTML = ":kleines:";
+		document.getElementById("monolith").style.display = "block";
+		
+		if(firstletter == letter && !(words.includes("monolith"))) {
+			words.push("monolith");
+			
+			document.getElementById("list").style.display = "block";
+			document.getElementById("list").innerHTML += "<br>monolith";
+		}
+	} else if(tempword == "zebra") {
+		document.getElementById("sword").innerHTML = "duuuuuurrhh.";
+		document.getElementById("zebra").style.display = "block";
+		
+		if(firstletter == letter && !(words.includes("zebra"))) {
+			words.push("zebra");
+			
+			document.getElementById("list").style.display = "block";
+			document.getElementById("list").innerHTML += "<br>zebra";
+		}
+	} else if(tempword == "recalcitrant") {
+		document.getElementById("sword").innerHTML = "These damn kids!";
+		document.getElementById("recalcitrant").style.display = "block";
+		
+		if(firstletter == letter && !(words.includes("recalcitrant"))) {
+			words.push("recalcitrant");
+			
+			document.getElementById("list").style.display = "block";
+			document.getElementById("list").innerHTML += "<br>recalcitrant";
+		}
 	} else if(tempword == "sideways dog") {
 		document.getElementById("sword").innerHTML = "A dog... aligned with the Z axis!?";
 		document.getElementById("sidewaysdog").style.display = "block";
@@ -119,6 +176,10 @@ function pushword() {
 		document.getElementById("sword").innerHTML = "There is no input.";
 	} else if(!(dictionary.includes(tempword))) {
 		document.getElementById("sword").innerHTML = "Word is not in the English dictionary.";
+	} else if(false) {
+		//get number test working
+		
+		document.getElementById("sword").innerHTML = "Word contains a numeric term.";
 	} else if(firstletter != letter) {
 		document.getElementById("sword").innerHTML = "Word does not begin with chosen letter.";
 	} else if(words.includes(tempword)) {
@@ -130,6 +191,9 @@ function pushword() {
 		document.getElementById("list").style.display = "block";
 		document.getElementById("list").innerHTML += "<br>" + tempword;
 	}
+	
+	document.getElementById("word").placeholder = "Word.";
+	document.getElementById("word").value = "";
 }
 
 //listen for the press of an enter key in each field, and upon enter press, trigger the event that corresponding to that input's button
@@ -152,3 +216,4 @@ inputword.addEventListener("keypress", function(event) {
 function hideid(id) {
 	document.getElementById(id).style.display = "none";
 }
+
