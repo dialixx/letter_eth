@@ -38,8 +38,6 @@ function pushletter() {
 	} else if(TLup == "ETH") {
 		document.getElementById("sletter").innerHTML = "The secret letter...";
 		document.getElementById("eth").style.display = "block";
-		
-		letter = "th";
 	} else if(TLup.length > 1) {
 		document.getElementById("sletter").innerHTML = "Input is longer than one letter.";
 	} else if(TLup == letter) {
