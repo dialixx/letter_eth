@@ -170,6 +170,9 @@ function pushword() {
 	} else if(tempword == "sideways dog") {
 		document.getElementById("sword").innerHTML = "A dog... aligned with the Z axis!?";
 		document.getElementById("sidewaysdog").style.display = "block";
+	} else if(tempword == "vertical dog") {
+		document.getElementById("sword").innerHTML = "UNTHINKABLE!";
+		document.getElementById("verticaldog").style.display = "block";
 	} else if(tempword == "") {
 		document.getElementById("sword").innerHTML = "There is no input.";
 	} else if(!(dictionary.includes(tempword))) {
